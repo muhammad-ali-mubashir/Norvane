@@ -99,3 +99,5 @@ html.lenis,html.lenis body{height:auto}
 /* Screen reader only */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 .status-dot.is-open{background:var(--reef);box-shadow:0 0 0 4px oklch(65.1% 0.094 210.7 / 0.25)}
+/* SplitText measures lines itself; balanced wrapping makes it split one word per line */
+[data-split],[data-scrub],[data-hero-title]{text-wrap:wrap}
