@@ -1,0 +1,23 @@
+---
+// Norvane horizontal lockup, reversed for dark grounds: Paper ink wedge and wordmark, Ochre tip.
+interface Props {
+  width?: number;
+}
+const { width = 140 } = Astro.props;
+const height = Math.round((width * 67.2) / 484.1);
+---
+<svg viewBox="0 0 484.1 67.2" width={width} height={height} role="img" aria-label="Norvane">
+  <g transform="translate(-9.16 -1.53) scale(0.7636)">
+    <path d="M12 2V90H68Z" class="logo-ink"></path>
+    <path d="M40 2H96V90Z" class="logo-tip"></path>
+  </g>
+  <g class="logo-ink" fill-rule="evenodd" transform="translate(84.1 11.2)">
+    <path d="M0 56V0H10.5L35.5 38V0H46V56H35.5L10.5 18V56Z"></path>
+    <path d="M25 0A25 28 0 1 0 25 56A25 28 0 1 0 25 0ZM25 10A15 18 0 1 1 25 46A15 18 0 1 1 25 10Z" transform="translate(60 0)"></path>
+    <path d="M0 0H26C38 0 44 8 44 18C44 28 38 36 28 37L44 56H31L16 38H10V56H0ZM10 9H25C30 9 34 12 34 18C34 24 30 29 25 29H10Z" transform="translate(124 0)"></path>
+    <path d="M0 0H11L24 40L37 0H48L30 56H18Z" transform="translate(182 0)"></path>
+    <path d="M0 56L21 0H31L52 56H41.5L36.6 43H15.4L10.5 56ZM18.75 34H33.25L26 14.7Z" transform="translate(236 0)"></path>
+    <path d="M0 56V0H10.5L35.5 38V0H46V56H35.5L10.5 18V56Z" transform="translate(302 0)"></path>
+    <path d="M0 0H38V9.5H10V23.5H33V33H10V46.5H38V56H0Z" transform="translate(362 0)"></path>
+  </g>
+</svg>
