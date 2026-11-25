@@ -1,0 +1,17 @@
+/* Norvane brand tokens, from the Norvane Brand System, written in OKLCH */
+:root{
+  --abyss:oklch(22.1% 0.033 223.9);
+  --deep:oklch(37.9% 0.061 216.2);
+  --reef:oklch(65.1% 0.094 210.7);
+  --ochre:oklch(75.8% 0.147 73.2);
+  --ochre-hover:oklch(80.5% 0.138 75.9);
+  --ochre-deep:oklch(51.7% 0.110 70.5);
+  --mist:oklch(95.3% 0.007 197);
+  --paper:oklch(98% 0.003 197.1);
+  --slate:oklch(47.1% 0.028 220.2);
+  --line:oklch(90.4% 0.014 207.9);
+  --on-dark:oklch(85.9% 0.018 210.2);
+  --muted-dark:oklch(75.4% 0.026 209.3);
+  --ph:oklch(92.1% 0.011 204.1);
+  --ph-dark:oklch(32.6% 0.048 219.3);
+}
