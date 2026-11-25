@@ -53,7 +53,7 @@ a:hover{color:oklch(22.1% 0.033 223.9)}
 .report dt,.report dd{margin:0;padding:14px 0;border-top:1px solid var(--line)}
 .report dt{font-weight:600;padding-right:16px}
 .anno-row{position:relative}
-.anno-ring{position:absolute;left:-14px;top:-6px;width:calc(100% + 28px);height:calc(100% + 12px);overflow:visible;pointer-events:none}
+.anno-ring{position:absolute;left:-12px;top:-10px;width:calc(100% + 24px);height:calc(100% + 18px);overflow:visible;pointer-events:none}
 .anno-note{display:block;margin-top:12px;max-width:300px;font-style:italic;font-weight:500;font-size:15px;line-height:21px;color:var(--ochre-deep);transform:rotate(-2deg)}
 .wont{list-style:none;margin:0;padding:0}
 .wont li{padding:22px 0;border-top:1px solid var(--line)}
