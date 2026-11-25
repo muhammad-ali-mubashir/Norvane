@@ -1,0 +1,38 @@
+---
+import { site } from '../config';
+---
+<section id="book" class="dark sec" style="padding-top: 140px; padding-bottom: 120px; background: oklch(22.1% 0.033 223.9); color: oklch(98% 0.003 197.1)">
+<div class="wrap">
+<span class="mono" data-fade="1" style="display: block; color: oklch(75.4% 0.026 209.3); margin-bottom: 28px">Book a call</span>
+<h2 data-split="1" class="mega" style="margin: 0 0 40px; font-size: clamp(56px, 8.4vw, 128px); max-width: 1100px">Thirty minutes with an engineer.</h2>
+<div class="book-grid">
+<div style="display: flex; flex-direction: column; gap: 40px">
+<p data-fade="1" style="margin: 0; font-size: 20px; line-height: 31px; max-width: 46ch; color: oklch(85.9% 0.018 210.2)">No slides and no sales pitch. You leave with one thing to fix, whether or not we work together.</p>
+<p data-fade="1" style="margin: -12px 0 0; font-size: 15px; line-height: 22px; color: oklch(75.4% 0.026 209.3)"><span class="status-dot" data-status-dot="1"></span><span data-status="1">Phones are answered Monday to Friday, 8:30 am to 5:30 pm.</span></p>
+<div data-fade="1" style="display: flex; gap: 16px; flex-wrap: wrap">
+<a class="btn btn-ochre" href="mailto:hello@norvane.com.au?subject=Book%20a%20call">Book a call</a>
+<a class="btn btn-ghost" href="mailto:hello@norvane.com.au?subject=Quote%20request">Request a quote</a>
+</div>
+<div data-fade="1" style="display: flex; flex-wrap: wrap; gap: 32px 56px; padding-top: 36px; border-top: 1px solid oklch(98% 0.003 197.1 / 0.2)">
+<div style="display: flex; flex-direction: column; gap: 8px; min-width: 220px">
+<span class="mono" style="color: oklch(75.4% 0.026 209.3)">Hours</span>
+<dl style="margin: 0; display: grid; grid-template-columns: auto auto; gap: 4px 24px">
+<dt>Monday to Friday</dt><dd class="ph-d" style="margin: 0">[8:30 am – 5:30 pm]</dd>
+<dt>Saturday</dt><dd class="ph-d" style="margin: 0">[Closed]</dd>
+<dt>Sunday</dt><dd class="ph-d" style="margin: 0">[Closed]</dd>
+</dl>
+<span style="font-size: 14px; color: oklch(85.9% 0.018 210.2)">Managed clients get an after-hours number for outages.</span>
+</div>
+<div style="display: flex; flex-direction: column; gap: 8px; min-width: 220px">
+<span class="mono" style="color: oklch(75.4% 0.026 209.3)">Office</span>
+<address style="font-style: normal"><span style="display: block; color: oklch(98% 0.003 197.1)">Norvane</span>{site.address ? <span>{site.address}</span> : <span class="ph-d">[Street address, suburb, state, postcode]</span>}</address>
+<span class="mono" style="color: oklch(75.4% 0.026 209.3); margin-top: 12px">Contact</span>
+<a href="mailto:hello@norvane.com.au" style="color: oklch(98% 0.003 197.1)">hello@norvane.com.au</a>
+{site.phone ? <a class="footlink" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a> : <span class="ph-d">[Phone number]</span>}
+</div>
+</div>
+</div>
+<div class="ph-img-dark" data-fade="1" style="min-height: 440px"><span class="mono" style="color: oklch(75.4% 0.026 209.3)">map — office location, embedded map once the address is final</span></div>
+</div>
+</div>
+</section>

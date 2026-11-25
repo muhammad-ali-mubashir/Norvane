@@ -1,0 +1,19 @@
+---
+import Logo from './Logo.astro';
+import { site } from '../config';
+---
+<footer class="dark" style="background: oklch(22.1% 0.033 223.9); color: oklch(85.9% 0.018 210.2); border-top: 1px solid oklch(98% 0.003 197.1 / 0.12)">
+<div class="wrap foot-grid" style="padding-top: 64px; padding-bottom: 48px">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<Logo width={132} />
+<p style="margin: 0; max-width: 34ch">IT services with a clear bearing. Cloud, cybersecurity, managed IT and software, from one team.</p>
+</div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="color: oklch(98% 0.003 197.1); font-weight: 600">Services</span><span>Cloud</span><span>Cybersecurity</span><span>Managed IT</span><span>Software</span></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="color: oklch(98% 0.003 197.1); font-weight: 600">Company</span><a class="footlink" href="#process">How it works</a><a class="footlink" href="#proof">Proof</a><a class="footlink" href="#credentials">Credentials</a></div>
+<div style="display: flex; flex-direction: column; gap: 10px"><span style="color: oklch(98% 0.003 197.1); font-weight: 600">Contact</span><span>Norvane</span>{site.address ? <span>{site.address}</span> : <span class="ph-d">[Street address, suburb, state, postcode]</span>}{site.phone ? <a class="footlink" href={`tel:${site.phone.replace(/\s/g, '')}`}>{site.phone}</a> : <span class="ph-d">[Phone number]</span>}<a class="footlink" href="mailto:hello@norvane.com.au">hello@norvane.com.au</a></div>
+</div>
+<div class="wrap" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; padding-top: 24px; padding-bottom: 32px; border-top: 1px solid oklch(98% 0.003 197.1 / 0.12); font-size: 14px; line-height: 20px">
+<span>© 2026 Norvane. Designed and built in-house. The triangles at the top point north if you leave them alone.</span>
+<span class="mono" style="color: oklch(75.4% 0.026 209.3)">ABN {site.abn || '[00 000 000 000]'}</span>
+</div>
+</footer>
