@@ -1,0 +1,17 @@
+---
+import Logo from './Logo.astro';
+---
+<header data-nav="1" class="dark" style="position: fixed; top: 0; left: 0; right: 0; z-index: 50; color: oklch(98% 0.003 197.1)">
+<div data-nav-bg="1" style="position: absolute; inset: 0; background: oklch(22.1% 0.033 223.9); opacity: 0; border-bottom: 1px solid oklch(98% 0.003 197.1 / 0.1)"></div>
+<nav class="wrap" aria-label="Main" style="position: relative; display: flex; align-items: center; justify-content: space-between; gap: 24px; padding-top: 16px; padding-bottom: 16px">
+<a href="#top" aria-label="Norvane home" style="display: inline-flex; padding: 8px 0">
+<Logo width={140} />
+</a>
+<div style="display: flex; align-items: center; gap: 32px">
+<a class="navlink hide-sm" href="#process">How it works</a>
+<a class="navlink hide-sm" href="#report">The monthly report</a>
+<a class="navlink hide-sm" href="#people">People</a>
+<a class="btn btn-ochre" href="#book" style="min-height: 44px; padding: 10px 20px; font-size: 14px">Book a call</a>
+</div>
+</nav>
+</header>
