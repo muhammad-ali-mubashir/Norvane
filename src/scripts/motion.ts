@@ -173,8 +173,13 @@ export function initMotion() {
   }
 
   // Things we will not do: each line is crossed out as it reaches the middle of the screen.
-  root.querySelectorAll<HTMLElement>('[data-strike]').forEach((s) => {
-    gsap.fromTo(s, { scaleX: 0 }, { scaleX: 1, ease: 'none', scrollTrigger: { trigger: s.parentElement, start: 'top 72%', end: 'top 52%', scrub: 0.6 } });
+  // The line is a background on the text itself, so it follows wrapped lines too.
+  root.querySelectorAll<HTMLElement>('.strike-wrap').forEach((s) => {
+    gsap.fromTo(
+      s,
+      { backgroundSize: '0% 0.09em' },
+      { backgroundSize: '100% 0.09em', ease: 'none', scrollTrigger: { trigger: s, start: 'top 72%', end: 'top 50%', scrub: 0.6 } },
+    );
   });
 
   // The engineer's pen ring and margin note on the sample report.
